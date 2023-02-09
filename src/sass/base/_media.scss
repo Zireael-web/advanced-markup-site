@@ -22,6 +22,12 @@
             right: -36px;
         }
     }
+    .catalog {
+        &__content {
+            margin: 60px auto 0; 
+            width: 620px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -59,6 +65,29 @@
     .tns-outer {
         width: 600px;
         margin: 0 auto;
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            img {
+                margin: 0 auto;
+            }
+        }
+        &__text {
+            max-width: 550px;
+        }
+        &__subtitle {
+            margin-top: 15px;
+            text-align: center;
+        }
+        &__count {
+            text-align: center;
+        }
+        &__descr {
+            margin-top: 15px;
+            text-align: center;
+        }
     }
 }
 
@@ -145,6 +174,29 @@
     .tns-outer {
         width: 450px;
     }
+    .catalog {
+        &__tab {
+            width: 154px;
+            font-size: 16px;
+            transform: skewX(-22deg);
+            div {
+                transform: skewX(22deg);
+            }
+        }
+        &__content {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+    }
+    .feed {
+        &__text {
+            max-width: 500px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+    }
 }
 
 
@@ -216,9 +268,6 @@
         img {
             width: 100%;
             height: 59%;
-
-            // width: 31px;
-            // height: 50px;
         }
         .prev {
             left: 0;
@@ -237,5 +286,44 @@
     }
     .tns-outer {
         width: 80%;
+    }
+    .catalog {
+        .title__catalog {
+            font-size: 27px;
+        }
+        padding-top: 10px;
+        padding-bottom: 60px;
+        &__tabs {
+            margin-top: 35px;
+            flex-direction: column;
+        }
+        &__tab {
+            width: 190px;
+            transform: skewX(-25deg);
+            &:not(last-child) {
+                margin-bottom: 20px;    
+            }
+            div {
+                transform: skewX(25deg);
+            }
+        }
+        &__content {
+            margin-top: 25px;
+        }
+        &-item {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 100%;
+            height: 250px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }

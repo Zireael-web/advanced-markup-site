@@ -4,12 +4,15 @@
     line-height: 30px;
     color: #0D0D0D;
     text-align: center;
+    text-transform: uppercase;
     &_left {
         max-width: 800px;
         font-size: 36px;
         line-height: 54px;
         color: #FFFFFF;
         text-align: left;
-        text-transform: uppercase;
+    }
+    &_catalog {
+        
     }
 }
