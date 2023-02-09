@@ -1,1 +1,1 @@
-Practice of adaptive markup, BEM, Gulp, Animations, JS + Jquery
+Practice of adaptive markup, BEM, Gulp, Animations, JS + Jquery, SCSS
