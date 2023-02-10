@@ -85,6 +85,8 @@ $(document).ready(function() {
         });
     }
 
+    //PHONE INPUT MASK
+
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
     $('input[name=phone]').mask("+7 (999) 999-99-99").on('click', function () {
@@ -92,5 +94,54 @@ $(document).ready(function() {
            $(this).get(0).setSelectionRange(4, 4);
            }
     });
+
+    //CONTACTS DELIVER ON YOUR MAIL(check PHP)
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {     
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn();
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+    // PAGEUP, SMOOTH SCROLL
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+          
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+    });
+
+    new WOW().init();
 });
 

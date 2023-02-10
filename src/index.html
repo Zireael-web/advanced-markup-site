@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/style.min.css">
+    
     
 </head>
 <body>  
-    <section class="promo">
+    <section id='up' class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -65,17 +68,17 @@
 
                 <div class="advantages__wrapper">
                     <div class="advantages__item">
-                        <img src="icons/section_adv/cup.png" alt="cup">
+                        <img src="icons/section_adv/cup.png" alt="cup" class="advantages__icon">
                         <h3 class="advantages__subheader">Делимся опытом</h3>
                         <div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                     </div>
                     <div class="advantages__item">
-                        <img src="icons/section_adv/heart.png" alt="heart">
+                        <img src="icons/section_adv/heart.png" alt="heart" class="advantages__icon_animated">
                         <h3 class="advantages__subheader">Заботимся о здоровье</h3>
                         <div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                     </div>
                     <div class="advantages__item">
-                        <img src="icons/section_adv/shoe.png" alt="shoe">
+                        <img src="icons/section_adv/shoe.png" alt="shoe" class="advantages__icon">
                         <h3 class="advantages__subheader">Учим бегать</h3>
                         <div class="advantages__descr">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - 
                             <a href="#"> I LOVE RUNNING.</a></div>
@@ -406,10 +409,10 @@
         <div class="container">
             <h2 class="title title_feed">отзывы клиентов</h2>
             <div class="feed__wrapper">
-                <div class="feed__item">
+                <div class="feed__item wow animate__animated animate__fadeInLeft" wdata-wow-duration="0.8s">
                     <img src="img/section_feed/feed_1.png" alt="feedback" class="feed__img">
                     <div class="feed__text">
-                        <div class="feed__subtitle">Ирина Иванченко </div>
+                        <div class="feed__subtitle">Ирина Иванченко</div>
                         <div class="feed__count">2 полумарафона</div>
                         <div class="feed__descr">
                             Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
@@ -420,10 +423,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="feed__item">
+                <div class="feed__item wow animate__animated animate__fadeInLeft" wdata-wow-duration="0.8s" data-wow-delay="0.1s">
                     <img src="img/section_feed/feed_2.png" alt="feedback" class="feed__img">
                     <div class="feed__text">
-                        <div class="feed__subtitle">Ирина Иванченко </div>
+                        <div class="feed__subtitle">Михаил Кузнецов</div>
                         <div class="feed__count">2 полумарафона</div>
                         <div class="feed__descr">
                             Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. 
@@ -433,10 +436,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="feed__item">
+                <div class="feed__item wow animate__animated animate__fadeInLeft" wdata-wow-duration="0.8s" data-wow-delay="0.2s">
                     <img src="img/section_feed/feed_3.png" alt="feedback" class="feed__img">
                     <div class="feed__text">
-                        <div class="feed__subtitle">Ирина Иванченко </div>
+                        <div class="feed__subtitle">Софья Альбова</div>
                         <div class="feed__count">2 полумарафона</div>
                         <div class="feed__descr">
                             Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
@@ -498,10 +501,16 @@
         </div>
     </div>
 
+    <a href="#up"  class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+    
+
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
