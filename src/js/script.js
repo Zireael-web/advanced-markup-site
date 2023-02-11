@@ -95,7 +95,7 @@ $(document).ready(function() {
            }
     });
 
-    //CONTACTS DELIVER ON YOUR MAIL(check PHP)
+    //CONTACTS DELIVER ON YOUR MAIL(check PHP file)
 
     $('form').submit(function(e) {
         e.preventDefault();
@@ -121,6 +121,9 @@ $(document).ready(function() {
     // PAGEUP, SMOOTH SCROLL
 
     $(window).scroll(function() {
+        if (screen.width < 390) {
+            return;
+        }
         if ($(this).scrollTop() > 1600) {
             $('.pageup').fadeIn();
         } else {

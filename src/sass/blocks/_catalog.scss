@@ -34,7 +34,7 @@
             border: none;
         }
         &_active {
-            border-color:#C70101;
+            border-color:$main-color;
             color: #FFFFFF;
             background-color: $main-color;
         }

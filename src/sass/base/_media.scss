@@ -28,6 +28,12 @@
             width: 620px;
         }
     }
+    .pageup {
+        right: 30px;
+        bottom: 30px;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -66,6 +72,14 @@
         width: 600px;
         margin: 0 auto;
     }
+    .catalog {
+        &__tab {
+            &:hover {
+                box-shadow: none;
+                border-color: $main-color;
+            }
+        }
+    }
     .feed {
         &__item {
             flex-direction: column;
@@ -88,6 +102,12 @@
             margin-top: 15px;
             text-align: center;
         }
+    }
+    .pageup {
+        right: 15px;
+        bottom: 15px;
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -306,6 +326,7 @@
             div {
                 transform: skewX(25deg);
             }
+
         }
         &__content {
             margin-top: 25px;
@@ -324,6 +345,38 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+    }
+    .overlay {
+        background-color: rgba(0,0,0, .80);
+        .modal {
+            padding: 30px 25px;
+            width: 95%;
+            max-width: 360px;
+            &__subtitle {
+                font-size: 23px;
+                line-height: 26px;
+            }
+            &__descr {
+                margin-top: 10px;
+                font-size: 17px;
+                line-height: 18px;
+                font-weight: 500;
+            }
+            &__close {
+                top: -26px;
+                right: -3px;
+            }
+        }
+        .feed-form {
+            width: 100%;
+        }
+        .error {
+            margin-bottom: 5px;
+        }
+        label.error {
+            font-size: 13px;
+            margin-bottom: 5px;
         }
     }
 }
