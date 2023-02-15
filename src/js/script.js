@@ -123,7 +123,7 @@ $(document).ready(function() {
         if (screen.width < 390) {
             return;
         }
-        if ($(this).scrollTop() > 1600 && $(this).scrollTop() < $(document).height() * 0.75) {
+        if (($(this).scrollTop() > 1600) && ($(this).scrollTop() < $(document).height() * 0.75) && ($(document).width() > 390)) {
             $('.pageup').fadeIn();
         } else {
             $('.pageup').fadeOut();
