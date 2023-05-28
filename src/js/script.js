@@ -95,7 +95,7 @@ $(document).ready(function() {
            }
     });
 
-    //CONTACTS DELIVER ON YOUR MAIL(check PHP file)
+    //CONTACTS DELIVER ON MAIL(PHP file)
 
     $('form').submit(function(e) {
         e.preventDefault();
